@@ -1,0 +1,17 @@
+.RadioInput {
+
+}
+
+.RadioInput::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+
+    background-color: #fff;
+}
+
+.RadioInput[aria-checked="true"]::before {
+    background-color: #222222;
+}
