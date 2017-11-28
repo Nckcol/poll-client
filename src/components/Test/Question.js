@@ -18,14 +18,13 @@ class Question extends Component {
 
   renderAnswer = (answer, index) => {
     return (
-      <div className='Question-answerItem' key={answer.id}>
+      <div className='Question-answerItem' key={answer.id} >
         <Answer 
           answer={answer}
           questionId={this.props.question.id}
           option={this.letters[index]}
           checked={this.state.selected === answer.id}
-          onChange={this.handleChange.bind(this, answer.id)}
-          />
+          onChange={this.handleChange.bind(this, answer.id)} />
       </div>
     )
   }

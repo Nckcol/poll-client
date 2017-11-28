@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import SubjectList from '../SubjectList/SubjectList'
 import { SubjectService } from '../../services/SubjectService'
+import { Link } from 'react-router-dom'
+import { Button } from 'semantic-ui-react'
 
 class HomePage extends Component {
 
@@ -40,6 +42,7 @@ class HomePage extends Component {
               ? (<SubjectList list={this.state.subjects}/>)
               : (<div>Loading...</div>)
         }
+        <Button primary content='Add new test' icon='plus' labelPosition='left' as={Link} to='/test/new' />
       </div>
     )
   }

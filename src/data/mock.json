@@ -1,135 +1,125 @@
 {
-  "subject": [
-    {
+  "subject": [{
       "id": 1,
-      "title": "biochemistry",
+      "title": "Biochemistry",
       "description": "",
-      "tests": [
-        {
-          "id": 1,
-          "title": "Biochemistry Test 1",
-          "time": 1800
-        }
-      ]
+      "tests": [{
+        "id": 1,
+        "title": "Biochemistry Test 1",
+        "time": 1800
+      }]
     },
     {
       "id": 2,
-      "title": "engineering",
+      "title": "Engineering",
       "description": "",
       "tests": []
     }
   ],
-  "test": [
-    {
-      "id": 1,
-      "title": "Biochemistry Test 1",
-      "time": 1800,
-      "questions": [
-        {
-          "id": "1",
-          "text": "Amino acids required in the human diet and not synthesized by the body are called",
-          "answers": [
-            {
-              "id": 1,
-              "text": "specialized",
-              "is_correct": false
-            },
-            {
-              "id": 2,
-              "text": "trace",
-              "is_correct": false
-            },
-            {
-              "id": 3,
-              "text": "essential",
-              "is_correct": true
-            },
-            {
-              "id": 4,
-              "text": "accessory",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "text": "The α-amino acids have a carboxyl group with a pK around __________ , and an amino group with a pK near __________ .",
-          "answers": [
-            {
-              "id": 5,
-              "text": "1.1, and 12.1",
-              "is_correct": false
-            },
-            {
-              "id": 6,
-              "text": "6.5, and 8.0",
-              "is_correct": false
-            },
-            {
-              "id": 7,
-              "text": "3.3, and 10.5",
-              "is_correct": false
-            },
-            {
-              "id": 8,
-              "text": "2.2, and 9.4",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "text": "The correlation between free energy ΔG transfer between the aqueous/organic phases and the surface area of amino acid residues",
-          "answers": [
-            {
-              "id": 9,
-              "text": "reflects the reduction in solvent-accessible area during protein folding",
-              "is_correct": true
-            },
-            {
-              "id": 10,
-              "text": "is only meaningful for the polar amino acids",
-              "is_correct": false
-            },
-            {
-              "id": 11,
-              "text": "ignores the important contribution of the peptide bond",
-              "is_correct": false
-            },
-            {
-              "id": 12,
-              "text": "is similar to effects seen with SDS denaturation",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "text": "Lymphocytes are activated by antigen in the",
-          "answers": [
-            {
-              "id": 13,
-              "text": "blood stream",
-              "is_correct": false
-            },
-            {
-              "id": 14,
-              "text": "bone marrow",
-              "is_correct": false
-            },
-            {
-              "id": 15,
-              "text": "liver",
-              "is_correct": false
-            },
-            {
-              "id": 16,
-              "text": "lymph nodes",
-              "is_correct": true
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "test": [{
+    "id": 1,
+    "title": "Biochemistry Test 1",
+    "time": 1800,
+    "questions": [{
+        "id": "1",
+        "text": "Amino acids required in the human diet and not synthesized by the body are called",
+        "answers": [{
+            "id": 1,
+            "text": "specialized",
+            "is_correct": false
+          },
+          {
+            "id": 2,
+            "text": "trace",
+            "is_correct": false
+          },
+          {
+            "id": 3,
+            "text": "essential",
+            "is_correct": true
+          },
+          {
+            "id": 4,
+            "text": "accessory",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "The α-amino acids have a carboxyl group with a pK around __________ , and an amino group with a pK near __________ .",
+        "answers": [{
+            "id": 5,
+            "text": "1.1, and 12.1",
+            "is_correct": false
+          },
+          {
+            "id": 6,
+            "text": "6.5, and 8.0",
+            "is_correct": false
+          },
+          {
+            "id": 7,
+            "text": "3.3, and 10.5",
+            "is_correct": false
+          },
+          {
+            "id": 8,
+            "text": "2.2, and 9.4",
+            "is_correct": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "The correlation between free energy ΔG transfer between the aqueous/organic phases and the surface area of amino acid residues",
+        "answers": [{
+            "id": 9,
+            "text": "reflects the reduction in solvent-accessible area during protein folding",
+            "is_correct": true
+          },
+          {
+            "id": 10,
+            "text": "is only meaningful for the polar amino acids",
+            "is_correct": false
+          },
+          {
+            "id": 11,
+            "text": "ignores the important contribution of the peptide bond",
+            "is_correct": false
+          },
+          {
+            "id": 12,
+            "text": "is similar to effects seen with SDS denaturation",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "Lymphocytes are activated by antigen in the",
+        "answers": [{
+            "id": 13,
+            "text": "blood stream",
+            "is_correct": false
+          },
+          {
+            "id": 14,
+            "text": "bone marrow",
+            "is_correct": false
+          },
+          {
+            "id": 15,
+            "text": "liver",
+            "is_correct": false
+          },
+          {
+            "id": 16,
+            "text": "lymph nodes",
+            "is_correct": true
+          }
+        ]
+      }
+    ]
+  }]
 }

@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import { Test } from '../Test'
-import { TestService } from '../../services/TestService'
-import { Dimmer, Loader, Segment } from 'semantic-ui-react'
+import React, {Component} from 'react'
+import {Test} from '../Test'
+import {TestService} from '../../services/TestService'
+import {Dimmer, Loader} from 'semantic-ui-react'
 
 class TestPage extends Component {
-  constructor (props, state) {
+  constructor(props, state) {
     super(props, state)
 
     this.state = {
@@ -18,14 +18,14 @@ class TestPage extends Component {
     this.fetchData()
   }
 
-  fetchData () {
-    this.testService.getItem(this.props.match.params.id)
+  fetchData() {
+    this
+      .testService
+      .getItem(this.props.match.params.id)
       .then((data) => {
         console.log(data)
-        
-        this.setState({
-          test: data
-        })
+
+        this.setState({test: data})
       })
       .catch((error) => {
         console.error(error)
@@ -35,15 +35,14 @@ class TestPage extends Component {
   render() {
     return (
       <div>
-        {
-          this.state.test
-          ? <Test test={this.state.test}/>
+        {this.state.test
+          ? <Test onSubmit={this.props.onTestSubmit} test={this.state.test}/>
           : (
             <Dimmer active inverted>
               <Loader inverted>Loading</Loader>
             </Dimmer>
           )
-        }
+}
       </div>
     )
   }
