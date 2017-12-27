@@ -2,7 +2,7 @@ import { BaseService } from './BaseService'
 
 class TestService extends BaseService {
 
-  static ENDPOINT = '/test'
+  static ENDPOINT = '/tests'
 
   getList() {
     return fetch(TestService.ENDPOINT, {
@@ -24,6 +24,20 @@ class TestService extends BaseService {
       headers: {
         'Content-Type': 'application/json'
       },
+    })
+      .then(this.checkStatus)
+      .then((response) => {
+        return response.json()
+      })
+  }
+
+  create(test) {
+    return fetch(`${TestService.ENDPOINT}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(test)
     })
       .then(this.checkStatus)
       .then((response) => {

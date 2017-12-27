@@ -22,7 +22,7 @@
     "eject": "react-scripts eject",
     "json-server": "json-server -p 3005 --watch ./src/data/mock.json"
   },
-  "proxy": "http://localhost:3005/",
+  "proxy": "http://localhost:3000/",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "classnames": "^2.2.5",

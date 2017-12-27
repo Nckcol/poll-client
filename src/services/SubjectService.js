@@ -2,7 +2,7 @@ import { BaseService } from './BaseService'
 
 class SubjectService extends BaseService {
 
-  static ENDPOINT = '/subject'
+  static ENDPOINT = '/subjects'
 
   getList() {
     return fetch(SubjectService.ENDPOINT, {

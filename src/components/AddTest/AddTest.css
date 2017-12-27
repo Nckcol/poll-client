@@ -1,0 +1,32 @@
+.addTest-list {
+    margin: 16px 0;
+}
+
+.addTest-titleHolder {
+    display: flex;
+    align-items: center;
+    margin: -8px;
+}
+
+.addTest-titleInput {
+    flex: 1 1 auto;
+    padding: 8px;
+}
+
+.addTest-titleButton {
+    flex: 0 0 auto;
+    padding: 8px;
+}
+
+.addTest-questionRow {
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.addTest-questionRow--newForm {
+    border-bottom: none;
+}
+
+.addTest-questionNumber {
+    
+}
